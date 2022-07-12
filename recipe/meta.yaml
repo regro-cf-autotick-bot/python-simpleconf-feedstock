@@ -1,5 +1,5 @@
 {% set name = "python-simpleconf" %}
-{% set version = "0.5.6" %}
+{% set version = "0.5.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-simpleconf-{{ version }}.tar.gz
-  sha256: 1700249e966532f11747a346c238672c01d87c8c437fa16525a124362093da50
+  sha256: e8c41be99cc835d59efe6a0d1617cffcfa6c7661142c5299d7ae39ecc06b3f14
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
